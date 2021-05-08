@@ -1,0 +1,200 @@
+.widgets {
+    flex: .4;
+}
+
+.widgets__searchContainer {
+    display: flex;
+    align-items: center;
+}
+
+.widgets input {
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid transparent;
+    position: relative;
+    background-color: var(--twitter-background);
+    padding: 15px 15px 15px 50px;
+    margin: 5px 20px 10px 20px;
+    width: 100%;
+}
+
+.widgets input:focus {
+    border-color: var(--twitter-color);
+    background-color: #fff;
+}
+
+.widgets .widgets__searchIcon {
+    position: absolute;
+    z-index: 10;
+    color: gray;
+    padding-left: 40px;
+    top: 18px;
+}
+
+.widgets input:focus .widgets .widgets__searchIcon {
+    color: var(--twitter-color) !important;
+}
+
+@media screen and (max-width: 1005px) {
+    .widgets {
+        display: none;
+    }
+}
+
+/* Whats Happening */
+
+.whatsHappening {
+    background-color: rgb(246, 246, 246);
+    margin: 0px 20px 10px 20px;
+    border-radius: 20px;
+}
+
+.whatsHappening > h3 {
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.whatsHappening > .news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.whatsHappening > .news:hover {
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+}
+
+.whatsHappening > .news > .news__text {
+    margin: 10px;
+}
+
+.whatsHappening > .news > .news__text > p {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.whatsHappening > .news > img {
+    border-radius: 10px;
+    height: 60px;
+    width: auto;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.whatsHappening > .showMore {
+    color: var(--twitter-color);
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.widgets > .widgets__footer {
+    margin: 20px 20px 0px 20px;
+}
+
+.widgets > .widgets__footer > p {
+    font-size: 13px;
+    color: gray;
+}
+
+.whatsHappening > .news > .news__text > div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Who to follow */
+
+.whoToFollow {
+    background-color: rgb(246, 246, 246);
+    margin: 0px 20px 10px 20px;
+    border-radius: 20px;
+}
+
+.whoToFollow > h3 {
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.whoToFollow > .accounts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.whoToFollow > .accounts:hover {
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+}
+
+.whoToFollow > .accounts > .accounts__text {
+    margin: 10px;
+}
+
+.whoToFollow > .accounts > .accounts__text > h5 {
+    display: flex;
+    align-items: center;
+}
+
+.whoToFollow > .accounts > .accounts__text > p {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.whoToFollow > .accounts > .accounts__text > h5 > .tickIcon {
+    font-size: 14px;
+    color: var(--twitter-color);
+}
+
+.whoToFollow > .accounts > button {
+    border-radius: 30px;
+    color: var(--twitter-color) !important;
+    border: 1px solid var(--twitter-color) !important;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: all .5s ease-out;
+}
+
+.whoToFollow > .accounts > .followingBtn {
+    border-radius: 30px;
+    color: #fff !important;
+    background-color: var(--twitter-color);
+    margin-right: 10px;
+    font-weight: bold;
+    border: none !important;
+    outline: none;
+    transition: all .5s ease-out;
+}
+
+.whoToFollow > .accounts > .followingBtn:hover {
+    background-color: red;
+}
+
+.whoToFollow > .accounts > button:hover {
+    background-color: rgb(223, 241, 247);
+}
+
+.whoToFollow > .showMore {
+    color: var(--twitter-color);
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+/* Widgets Footer */
+
+.widgets > .widgets__footer {
+    margin: 0px 20px 0px 20px;
+}
+
+.widgets > .widgets__footer > p {
+    font-size: 12px;
+    color: gray;
+}
